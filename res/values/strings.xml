@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">And1OnlineLab10</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detalhe_imovel">DetalheImovelActivity</string>
 
 </resources>
