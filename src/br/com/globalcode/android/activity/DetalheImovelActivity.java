@@ -44,7 +44,7 @@ public class DetalheImovelActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse("http://www.redesaojose.com.br"));
+				i.setData(Uri.parse(Constants.IMOBILIARIA_HOME_SITE));
 				startActivity(i);
 			}
 		});
@@ -52,9 +52,8 @@ public class DetalheImovelActivity extends Activity {
 		findViewById(R.id.telefone).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				TextView t = (TextView) v;
 				Intent i = new Intent(Intent.ACTION_CALL);
-				i.setData(Uri.parse("tel:" + t.getText().toString()));
+				i.setData(Uri.parse("tel:" + Constants.IMOBILIARIA_FONE));
 				startActivity(i);
 			}
 		});
@@ -68,9 +67,9 @@ public class DetalheImovelActivity extends Activity {
 				//intent.setType("message/rfc822");
 				intent.setType("plain/text");
 				intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
-				intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "contato@imobiliariadonetao.com.br" });
+				intent.putExtra(Intent.EXTRA_EMAIL, new String[] { Constants.IMOBILIARIA_EMAIL });
 				intent.putExtra(Intent.EXTRA_SUBJECT, "Mais Informações");
-				intent.putExtra(Intent.EXTRA_TEXT, "Mais informações sobre o imóvel " + imovel.toString());
+				intent.putExtra(Intent.EXTRA_TEXT, "Mais informações sobre o imóvel: " + imovel.toString());
 				startActivity(Intent.createChooser(intent, "Enviar e-mail utilizando"));
 			}
 		});

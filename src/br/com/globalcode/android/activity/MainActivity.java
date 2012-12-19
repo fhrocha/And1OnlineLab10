@@ -41,7 +41,7 @@ public class MainActivity extends ListActivity {
         imovel = Imovel.newInstance();
         imovel.setAreaTotal(90);
         imovel.setAreaUtil(80);
-        imovel.setBairro("S‹o Vito");
+        imovel.setBairro("São Vito");
         imovel.setDescricao("Apto novo, pronto para morar!");
         imovel.setDormitorios(3);
         imovel.setSuites(1);

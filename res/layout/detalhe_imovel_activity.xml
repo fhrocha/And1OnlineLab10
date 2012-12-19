@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:text="http://www.imobiliariaxyz.com.br"
+                android:text="Web site da imobiliária"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
@@ -98,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="19 9191 9292"
+                android:text="Fale Conosco"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <Button
